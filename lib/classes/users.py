@@ -1,5 +1,5 @@
 from lib import CURSOR, CONN
-from pulp import *
+
 
 
 

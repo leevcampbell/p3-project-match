@@ -1,4 +1,3 @@
-from pulp import *
 from lib.classes.users import User
 from lib.classes.sendemail import send_email
 
@@ -33,7 +32,9 @@ def match():
         if num_attributes_match >= 2:
             print(f"You and {match_user.name} are a match!❤️🍸")
             matched_users.append(match_user)
-            send_email('pythontestingphase3@gmail.com', "ekzewlnqqveldcri", match_user, current_user)
+            if isinstance(match_user, User) and isinstance(current_user, User):
+                send_email('pythontestingphase3@gmail.com', "ekzewlnqqveldcri", match_user, current_user)
+        
             
     if not matched_users:
         print("No matches found. Try again later.")

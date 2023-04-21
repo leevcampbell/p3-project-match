@@ -25,7 +25,7 @@ def send_email(email_sender, email_password, match_users, current_user):
         smtp.login(email_sender, email_password)
         smtp.send_message(em)
 
-    send_email('pythontestingphase3@gmail.com', "ekzewlnqqveldcri", f"{match_users.email}", f'{current_user.email}')
+    # send_email('pythontestingphase3@gmail.com', "ekzewlnqqveldcri", f"{match_users.email}", f'{current_user.email}')
 
 
 
