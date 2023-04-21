@@ -17,7 +17,7 @@ def send_email(email_sender, email_password, match_users, current_user):
     """
     em = EmailMessage()
     em['From'] = email_sender
-    em['To'] = [current_user, match_users]
+    em['To'] = [current_user.email, match_users.email]
     em['Subject'] = "You've got a match!"
     em.set_content(body)
     context = ssl.create_default_context()

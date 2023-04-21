@@ -36,7 +36,7 @@ def main_menu():
         while True:
             user_input = input("Are you sure you want to exit? (y/n) ")
             if user_input == "y":
-                print("🖕🍸")
+                print("Go home, you're drunk🖕🍸")
                 break
     else:
         print("Invalid input")
