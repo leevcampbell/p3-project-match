@@ -13,7 +13,7 @@ class User:
         self.id = id
 
     def __repr__(self):
-        return f"<User name:{self.name} email:{self.email} quickie:{self.quickie} long_term:{self.long_term} drinks:{self.drinks} {self.id}>"
+        return f"<User name: {self.name} email: {self.email} quickie: {self.quickie} long_term: {self.long_term} drinks: {self.drinks} >"
     
 
     
@@ -91,6 +91,9 @@ class User:
         current_user = CURSOR.execute(sql).fetchone()
         current_user = User(current_user[1], current_user[2], current_user[3], current_user[4], current_user[5], current_user[0])
         return current_user
+    
+
+
     
 
 
